@@ -20,7 +20,7 @@
         <td th:text="${petrolPump.dieselPrice}"></td>
     </tr>
 </table>
-<a href="/petrolPumps">Back to List</a>
+<a href="/">Back to List</a>
 <a th:href="@{/petrolPumps/{id}/delete(id=${petrolPump.id})}" onclick="return confirm('Are you sure you want to delete this petrol pump?')">Delete</a>
 </body>
 </html>
