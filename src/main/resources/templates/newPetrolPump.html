@@ -1,0 +1,32 @@
+<!-- newPetrolPump.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Petrol Pump</title>
+</head>
+<body>
+<h1>New Petrol Pump</h1>
+<form action="/petrolPumps" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+    </div>
+    <div>
+        <label for="petrolPrice">Petrol Price:</label>
+        <input type="number" step="0.01" id="petrolPrice" name="petrolPrice" required>
+    </div>
+    <div>
+        <label for="dieselPrice">Diesel Price:</label>
+        <input type="number" step="0.01" id="dieselPrice" name="dieselPrice" required>
+    </div>
+    <div>
+        <button type="submit">Save</button>
+        <a href="/petrolPumps">Cancel</a>
+    </div>
+</form>
+</body>
+</html>

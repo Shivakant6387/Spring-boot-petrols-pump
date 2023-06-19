@@ -1,0 +1,26 @@
+<!-- petrolPump.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Petrol Pump</title>
+</head>
+<body>
+<h1>Petrol Pump</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Petrol Price</th>
+        <th>Diesel Price</th>
+    </tr>
+    <tr>
+        <td th:text="${petrolPump.name}"></td>
+        <td th:text="${petrolPump.location}"></td>
+        <td th:text="${petrolPump.petrolPrice}"></td>
+        <td th:text="${petrolPump.dieselPrice}"></td>
+    </tr>
+</table>
+<a href="/petrolPumps">Back to List</a>
+<a th:href="@{/petrolPumps/{id}/delete(id=${petrolPump.id})}" onclick="return confirm('Are you sure you want to delete this petrol pump?')">Delete</a>
+</body>
+</html>

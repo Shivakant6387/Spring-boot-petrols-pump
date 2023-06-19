@@ -1,0 +1,27 @@
+<!-- petrolPumps.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Petrol Pumps</title>
+</head>
+<body>
+<h1>Petrol Pumps</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Petrol Price</th>
+        <th>Diesel Price</th>
+        <th></th>
+    </tr>
+    <tr th:each="petrolPump : ${petrolPumps}">
+        <td th:text="${petrolPump.name}"></td>
+        <td th:text="${petrolPump.location}"></td>
+        <td th:text="${petrolPump.petrolPrice}"></td>
+        <td th:text="${petrolPump.dieselPrice}"></td>
+        <td><a th:href="@{/petrolPumps/{id}(id=${petrolPump.id})}">View</a></td>
+    </tr>
+</table>
+<a href="/petrolPumps/new">Add New Petrol Pump</a>
+</body>
+</html>
