@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpriBootPetrolsPumpApplication {
+public class SprigBootPetrolPumpApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpriBootPetrolsPumpApplication.class, args);
+		SpringApplication.run(SprigBootPetrolPumpApplication.class, args);
 	}
 
 }
